@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--navbar section-->
+        <div>
+            <div class="bg-[#aaaaaa] fixed top-0 p-4  w-[100%] text-black">
+                <div
+                    class="text-stone-800 container mx-auto flex justify-between items-center">
+                    <div class="font-bold ml-3 text-[20px] italic">Higher Study
+                        Guide</div>
+                    <div class="space-x-4 px-4 sm:text-[15px] text-[10px]">
+                        <a href="#" class="hover:text-white">Home</a>
+                        <a href="#" class="hover:text-white">Blog</a>
+                        <a href="#" class="hover:text-white">Agency</a>
+                        <a href="#" class="hover:text-white">Eligibility</a>
+                        <a href="#" class="hover:text-white">FAQ</a>
+                        <a href="#" class="hover:text-white">Success</a>
+                        <a href="#" class="hover:text-white">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--register section-->
+
+        <div class="flex items-center justify-center min-h-screen bg-[#f0f0f0] pt-20 sm:px-[200px] px-20">
+            <div class="bg-[#e8e3e3] p-8 rounded-lg shadow-md w-full ">
+                <h2 class="text-[30px] font-bold mb-6 text-center">Registration</h2>
+                <div class="flex justify-center gap-1.5 mb-6">
+                    <button id="userBtn" class="bg-blue-500 w-20 text-white p-2 rounded hover:bg-blue-600">User</button>
+                    <button id="alumniBtn" class="bg-blue-500 w-20 text-white p-2 rounded hover:bg-blue-600">Alumni</button>
+                </div>
+                <form id="registerForm">
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-medium mb-2">Username</label>
+                        <input type="text" id="username" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div id="userFields">
+                        <div class="mb-4">
+                            <label for="institution" class="block text-sm font-medium mb-2">Institution</label>
+                            <input type="text" id="institution" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="program" class="block text-sm font-medium mb-2">Program</label>
+                            <input type="text" id="program" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="department" class="block text-sm font-medium mb-2">Department</label>
+                            <input type="text" id="department" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="session" class="block text-sm font-medium mb-2">Session</label>
+                            <input type="text" id="session" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="aim" class="block text-sm font-medium mb-2">Aim</label>
+                            <input type="text" id="aim" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                    </div>
+                    <div id="alumniFields" class="hidden">
+                        <div class="mb-4">
+                            <label for="prevInstitution" class="block text-sm font-medium mb-2">Previous Institution</label>
+                            <input type="text" id="prevInstitution" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="prevProgram" class="block text-sm font-medium mb-2">Previous Program</label>
+                            <input type="text" id="prevProgram" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="prevDepartment" class="block text-sm font-medium mb-2">Previous Department</label>
+                            <input type="text" id="prevDepartment" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="gradSession" class="block text-sm font-medium mb-2">Graduation Session</label>
+                            <input type="text" id="gradSession" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="currInstitution" class="block text-sm font-medium mb-2">Current Institution</label>
+                            <input type="text" id="currInstitution" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="currProgram" class="block text-sm font-medium mb-2">Current Program</label>
+                            <input type="text" id="currProgram" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="currDepartment" class="block text-sm font-medium mb-2">Current Department</label>
+                            <input type="text" id="currDepartment" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="currSession" class="block text-sm font-medium mb-2">Current Session</label>
+                            <input type="text" id="currSession" class="w-full p-2 border border-gray-300 rounded" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="authentication" class="block text-sm font-medium mb-2">Authentication</label>
+                        <input type="text" id="authentication" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-medium mb-2">Password</label>
+                        <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="confirmPassword" class="block text-sm font-medium mb-2">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('userBtn').addEventListener('click', function() {
+                document.getElementById('userFields').classList.remove('hidden');
+                document.getElementById('alumniFields').classList.add('hidden');
+            });
+
+            document.getElementById('alumniBtn').addEventListener('click', function() {
+                document.getElementById('userFields').classList.add('hidden');
+                document.getElementById('alumniFields').classList.remove('hidden');
+            });
+        </script>
+
+    </body>
+</html>
