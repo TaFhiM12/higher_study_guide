@@ -23,6 +23,7 @@ class Agency extends Model
         'phone',
         'address',
         'is_featured',
+        'is_approved',
     ];
 
     /**

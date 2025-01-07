@@ -19,7 +19,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     // Agency routes
 Route::get('/admin/agency-requests', [AdminController::class, 'showAgencyRequests'])->name('admin.agency');
-Route::post('/admin/approve-agency/{id}', [AdminController::class, 'approveAgency'])->name('admin.approve_agency');
+Route::get('/admin/approve-agency/{id}', [AdminController::class, 'approveAgency'])->name('admin.approve_agency');
 Route::delete('/admin/delete-agency/{id}', [AdminController::class, 'destroyAgency'])->name('admin.delete_agency');
 Route::get('/admin/agency-details/{id}', [AdminController::class, 'getAgencyDetails'])->name('admin.agency.details');
 
