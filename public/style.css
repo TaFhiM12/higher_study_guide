@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+.geologica{
+	font-family: "Geologica", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+	  "slnt" 0,
+	  "CRSV" 0,
+	  "SHRP" 0;
+  }
+
+  .clip-1{
+	clip-path: polygon(25% 0%, 65% 0, 40% 100%, 0% 100%);
+  }
+
